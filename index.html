@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./media.css">
   <title>Document</title>
 </head>
 <body>
@@ -26,17 +27,27 @@ perfeito para se preparar para codar ☕
   <aside class="man"><img id="man" src="./assets/read_news.jpg" alt=""></aside>
 
 <form action="" id="meu-form">
-  <label for="email" id="label" autofocus >Insira seu e-mail:</label>
+  <label for="email" id="label">Insira seu e-mail:</label>
   <input 
   type="email"
   id="email"
   name="email"
-  placeholder="oi@rocketseat.com">
+  placeholder="oi@rocketseat.com"
+  autofocus
+  required
+  oninvalid="this.setCustomValidity('Por favor insira um e-mail valido ')"
+  oninput="setCustomValidity('')"
+  >
+  
+  
   <button type="submit"><img id="send"src="./assets/send.svg" alt="Enviar Formulario"></button>
-   <div. class="link">
-     <a href="">deixe-me ler primeiro</a>
-     <i src="./assets/arrow-right.svg"></i>
-   </div>
+
+  <div class="link" >
+    <span>
+      <a href="" >deixe-me ler primeiro</a>
+       </span>
+       <img id="arrow" src="./assets/arrow-right.svg" alt="">
+       </div>
 </form>
 </main>
 </body>

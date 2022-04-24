@@ -20,8 +20,8 @@ body {
   grid-template-areas:
     "header aside"
     "main aside";
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr  1fr;
+  grid-template-columns: 1fr  1fr;
   overflow-x: hidden;
   background-color: var(--body-bg-color);
 }
@@ -43,6 +43,7 @@ header {
 
 aside {
   grid-area: aside;
+  width:100%
 }
 
 #man {
@@ -94,7 +95,8 @@ form {
 }
 
 input {
-  width: 46.875rem;
+  /* width: 46.875rem; */
+  width: 54rem;
   height: 3rem;
 }
 
@@ -133,18 +135,25 @@ button {
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  margin-left: 94%;
+  margin-left: 54rem;
   margin-top: -8.2%;
   border: none;
   margin-bottom: 3.125rem;
 }
 
+.link, a {
+display:flex;
+flex-wrap: wrap;
+align-items: center;
+color: #8257E5;
+margin: 0px 0px 0px 0px;
+}
 
-.link {
-  display: flex;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 138.73%;
-  background-repeat: no-repeat;
+input:required {
+  box-shadow: 1px 1px 10px rgba(9, 253, 45, 0.85);
+}
+
+input:required:focus {
+  border: 1px solid rgb(0, 255, 60);
+  outline: none;
 }
