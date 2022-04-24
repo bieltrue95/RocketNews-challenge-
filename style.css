@@ -120,6 +120,11 @@ input[type="email"] {
   border-bottom-style: none;
 }
 
+#send {
+  width: 20px ;
+  height: 20px;
+}
+
 button {
   display: flex;
   width: 48.36px;
@@ -133,6 +138,7 @@ button {
   border: none;
   margin-bottom: 3.125rem;
 }
+
 
 .link {
   display: flex;
